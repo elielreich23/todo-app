@@ -1,11 +1,11 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Header } from "../components/Header";
-import Profile from "../pages/Profile";
-import Projects from "../pages/Projects";
+import { Header } from "../components/header";
+import Profile from "../pages/profile";
+import Projects from "../pages/projects";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
 import Home from "../pages/Home/index";
-import Sidebar from "../components/Sidebar";
+import Sidebar from "../components/sidebar";
 import Todo from "../components/Todo-section";
 import Progress from "../components/Progress";
 import Template from "../pages/Template";
