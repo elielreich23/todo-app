@@ -1,6 +1,6 @@
 // import { useState } from 'react'
 import './style.scss';
-import { Header } from "../Header/index";
+import { Header } from "../header/index";
 
 const Sidebar = () => {
     // const [btnstate, setBtnstate] = useState(false)
