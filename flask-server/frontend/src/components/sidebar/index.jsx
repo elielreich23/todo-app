@@ -1,6 +1,6 @@
 // import { useState } from 'react'
 import './style.scss';
-import { Header } from "../header/index";
+
 
 const Sidebar = () => {
     // const [btnstate, setBtnstate] = useState(false)
@@ -91,7 +91,6 @@ const Sidebar = () => {
                         <h4 className="dark-txt ">Dark</h4>
                     </div>
                 </div>
-                <Header />
             </div>
 
         </>
