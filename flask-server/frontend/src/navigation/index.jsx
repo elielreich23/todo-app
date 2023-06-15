@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import { Header } from "../components/header";
 import Profile from "../pages/profile";
 import Projects from "../pages/projects";
@@ -15,8 +15,7 @@ import Done from "../components/Done";
 const Navigation = () => {
     return(
         <>
-            <BrowserRouter>
-                <Header />
+            <Header />
                 <Sidebar />
                 <Routes>
                     <Route path="/profile" element={<Profile />} />
@@ -30,8 +29,6 @@ const Navigation = () => {
                     <Route path="/progress" element={<Progress />} />
                     <Route path="/done" element={<Done />} />
                 </Routes>
-            </BrowserRouter>
-                
         </>
     )
 }
