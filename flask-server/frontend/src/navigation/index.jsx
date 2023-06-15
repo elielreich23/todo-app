@@ -18,9 +18,6 @@ const Navigation = () => {
             <BrowserRouter>
                 <Header />
                 <Sidebar />
-                <Todo />
-                <Progress />
-                <Done />
                 <Routes>
                     <Route path="/profile" element={<Profile />} />
                     <Route path="/projects" element={<Projects />} />
