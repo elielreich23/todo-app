@@ -1,23 +1,24 @@
 import { Route, Routes } from "react-router-dom";
 import { Header } from "../components/header";
-import Profile from "../pages/profile";
-import Projects from "../pages/projects";
-import Login from "../pages/Login";
-import Register from "../pages/Register";
-import Home from "../pages/Home/index";
+// import Profile from "../pages/profile";
+// import Projects from "../pages/projects";
+// import Login from "../pages/Login";
+// import Register from "../pages/Register";
+// import Home from "../pages/Home/index";
 import Sidebar from "../components/sidebar";
-import Todo from "../components/Todo-section";
-import Progress from "../components/Progress";
-import Template from "../pages/Template";
-import Done from "../components/Done";
-
+// import Todo from "../components/Todo-section";
+// import Progress from "../components/Progress";
+// import Template from "../pages/Template";
+// import Done from "../components/Done";
 
 const Navigation = () => {
-    return(
-        <>
-            <Header />
-                <Sidebar />
-                <Routes>
+  return (
+    <>
+      <div className="Navigate" style={{display: 'flex', flexDirection: 'column'}}>
+        <Header />
+        <Sidebar />
+      </div>
+      {/* <Routes>
                     <Route path="/profile" element={<Profile />} />
                     <Route path="/projects" element={<Projects />} />
                     <Route path="/login" element={<Login />} />
@@ -28,9 +29,9 @@ const Navigation = () => {
                     <Route path="/todo" element={<Todo />} />
                     <Route path="/progress" element={<Progress />} />
                     <Route path="/done" element={<Done />} />
-                </Routes>
-        </>
-    )
-}
+                </Routes> */}
+    </>
+  );
+};
 
 export default Navigation;
