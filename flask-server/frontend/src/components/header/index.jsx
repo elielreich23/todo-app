@@ -11,7 +11,7 @@ export const Header = () => {
     <>
       <div className="header-container">
         <div className="header-content">
-          <div className="text">Welcome back, Vincent <span> 👋</span>
+          <div className="text">Welcome back, Vincentttttttttttttttt <span> 👋</span>
             {/* create a function to collect user name upon signup */}
           
           </div>

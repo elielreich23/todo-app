@@ -14,9 +14,9 @@ import Sidebar from "../components/sidebar";
 const Navigation = () => {
   return (
     <>
-      <div className="Navigate" style={{display: 'flex', flexDirection: 'column'}}>
-        <Header />
+      <div className="Navigate" style={{display: 'flex', flexDirection: 'row'}}>
         <Sidebar />
+        <Header />
       </div>
       {/* <Routes>
                     <Route path="/profile" element={<Profile />} />
