@@ -1,15 +1,36 @@
-.sideContainer{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
-    .blackpane{
-        height: 100svh;
-        background-color: #1C1D22;
-        padding: 10px;
-        img{
-            display: block;
-            margin: 30px 20px;
-        }
+.sideContainer {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+
+  .blackpane {
+    height: 100svh;
+    background-color: #1c1d22;
+    padding: 10px;
+    img {
+      display: block;
+      margin: 30px 20px;
     }
+  }
+  .whitepane {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    width: 300px;
+
+    .whitepane-heading{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .plus{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        background-color: #eeeeee;
+      }
+    }
+  }
 }
