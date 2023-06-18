@@ -32,5 +32,21 @@
         background-color: #eeeeee;
       }
     }
+    .drop{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      padding-right: 5px;
+      background-color: #eeeeee;
+      .arrow{
+        font-weight: bolder;
+        font-size: 30px;
+      }
+    }
+    ul{
+      padding-left: 20px;
+      border-left: 1px solid black;
+    }
   }
 }

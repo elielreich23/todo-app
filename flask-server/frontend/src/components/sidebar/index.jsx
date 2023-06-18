@@ -1,6 +1,7 @@
 // import { useState } from 'react'
 import "./style.scss";
 import { iconData } from "./iconData";
+import { useState } from "react";
 
 const Sidebar = () => {
   // const [btnstate, setBtnstate] = useState(false)
@@ -24,6 +25,20 @@ const Sidebar = () => {
             <h1>Projects</h1>
             <div className="plus">+</div>
           </div>
+          <Dropdown className={"drop"}>
+            <div className="ul">
+              <ul>
+                <li>This</li>
+                <li>That</li>
+              </ul>
+            </div>
+          </Dropdown>
+          <Dropdown className={"drop"}>
+            <ul>
+              <li>This</li>
+              <li>That</li>
+            </ul>
+          </Dropdown>
         </div>
       </div>
     </>
@@ -31,3 +46,19 @@ const Sidebar = () => {
 };
 
 export default Sidebar;
+
+export function Dropdown({ children, className }) {
+  const [openDrop, setOpenDrop] = useState(false);
+  function handledrop() {
+    setOpenDrop(!openDrop);
+  }
+  return (
+    <>
+      <div className={className} onClick={handledrop}>
+        <div>This</div>
+        <div className="arrow">{openDrop ? "^" : ">"}</div>
+      </div>
+      {openDrop && children}
+    </>
+  );
+}
