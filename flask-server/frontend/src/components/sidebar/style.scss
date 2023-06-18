@@ -22,6 +22,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      margin-bottom: 25px;
       .plus{
         display: flex;
         align-items: center;
@@ -36,17 +37,44 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      padding: 10px 0px;
       cursor: pointer;
-      padding-right: 5px;
-      background-color: #eeeeee;
       .arrow{
         font-weight: bolder;
         font-size: 30px;
       }
+      .droptext{
+        color:rgba(28, 29, 34, 0.5);
+        font-weight: 700;
+        font-size: 16px;
+      }
     }
-    ul{
-      padding-left: 20px;
-      border-left: 1px solid black;
+    .listStyle{
+      display: flex;
+      align-items: end;
+      img{
+        height: 129px;
+      }
+      ul{
+        li{
+          padding-left: 10px;
+        }
+        .fourth{
+          padding-bottom: 5px;
+          
+        }
+        .third{
+          padding-bottom: 15px;
+        }
+        .second{
+          padding-bottom: 15px;
+        }
+        .first{
+          padding-bottom: 15px;
+        }
+      }
     }
+    
+    
   }
 }
