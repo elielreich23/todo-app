@@ -14,7 +14,7 @@ import Sidebar from "../components/sidebar";
 const Navigation = () => {
   return (
     <>
-      <div className="Navigate" style={{display: 'flex', flexDirection: 'row'}}>
+      <div className="Navigate" style={{display: 'flex' }}>
         <Sidebar />
         <Header />
       </div>

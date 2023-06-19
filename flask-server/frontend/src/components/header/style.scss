@@ -1,0 +1,21 @@
+.header-container{
+    .header-content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        .text{
+            font-size: 20px;
+            font-weight: 700;
+            color: #1c1d22;
+        }
+        .HeaderRight{
+            display: flex;
+            align-items: center;
+            .header-icons{
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+}
