@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 export const Header = () => {
   const [username, setUsername] = useState("Vincent");
   return (
-    <div style={{width:'100%'}}>
+    <div style={{width:'100%', padding:'0px 20px'}}>
       <div className="header-container">
         <div className="header-content">
           <div className="text">
@@ -38,14 +38,15 @@ export const Header = () => {
       </div>
       <div className="subHeader">
         <div className="leftSide">
-          <img src="/assets/rec.svg" alt="" />
-          <h3>Board view</h3>
+          <h3 className="text">
+            <img src="/assets/rec.svg" alt="" />Board view
+            </h3>
         </div>
-        <div className="rightSi">
+        <div className="rightSide">
           <h3>Filter</h3>
           <h3>Sort</h3>
           <img src="/assets/More.svg" alt="" />
-          <h1></h1>
+          <button>New template</button>
         </div>
       </div>
     </div>
