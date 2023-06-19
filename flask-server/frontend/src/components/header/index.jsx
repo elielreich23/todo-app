@@ -6,7 +6,7 @@ import { FaRegBell } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 export const Header = () => {
-  const [username, setUsername] = useState("Vincent");
+  const [username] = useState("Vincent");
   return (
     <div style={{width:'100%', padding:'0px 20px'}}>
       <div className="header-container">
