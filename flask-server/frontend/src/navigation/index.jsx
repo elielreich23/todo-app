@@ -18,7 +18,9 @@ const Navigation = () => {
         <Sidebar />
         <Header />
       </div>
+      
       {/* <Routes>
+      dinamic content
                     <Route path="/profile" element={<Profile />} />
                     <Route path="/projects" element={<Projects />} />
                     <Route path="/login" element={<Login />} />
