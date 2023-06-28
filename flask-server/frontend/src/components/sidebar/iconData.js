@@ -6,12 +6,12 @@ export const iconData = [
     },
     {
         altText: 'Second icon',
-        url: '/assets/icon.svg',
+        url: '/assets/Icon.svg',
         title: ''
     },
     {
         altText: 'ThirdIcon',
-        url: '/assets/icon1.svg',
+        url: '/assets/Icon1.svg',
         title: 'Your profile'
     },
     {
@@ -39,4 +39,5 @@ export const iconData = [
         url: '/assets/6.svg',
         title: 'Settings'
     },
+
 ]

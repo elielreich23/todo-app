@@ -51,6 +51,11 @@ const Sidebar = () => {
           <Dropdown name={"Reminders"} className={"drop"}></Dropdown>
           <Dropdown name={"Messengers"} className={"drop"}></Dropdown>
         </div>
+        {/* 
+        add style for logout button
+        <div className="logout">
+          <img classname="log-btn" src="/assets/log.svg" alt="" />
+        </div> */}
       </div>
     </>
   );
