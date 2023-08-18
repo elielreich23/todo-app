@@ -4,6 +4,7 @@ import './style.scss'
 const Done = () => {
     return (
         <>
+        {/* create logic for dinamic section */}
             <section className="done-title">
                 {/* the number in nthe bracket should be gotten from the number of task in the section */}
                 <h3>Done(3)</h3>
