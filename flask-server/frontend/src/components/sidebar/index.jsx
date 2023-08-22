@@ -1,14 +1,8 @@
-// import { useState } from 'react'
 import "./style.scss";
 import { iconData } from "./iconData";
 import { useState } from "react";
 
 const Sidebar = () => {
-  // const [btnstate, setBtnstate] = useState(false)
-  // function handleClick() {
-  //     setBtnstate = (btnstate >= !btnstate)
-  // }
-  // let toggleClass = btnstate ? 'active' : null;
 
   return (
     <>
