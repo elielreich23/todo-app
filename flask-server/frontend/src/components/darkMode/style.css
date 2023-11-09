@@ -1,0 +1,1 @@
+.dark-mode-container{position:fixed;bottom:32px;right:32px;width:150px;height:50px;display:flex;justify-content:center;align-items:center;border-radius:5px;background-color:#fff;cursor:pointer;box-shadow:0 4px 6px rgba(0,0,0,.1);transition:background-color .3s ease}.dark-mode-container.dark{background-color:#1a1a1a;color:#fff}

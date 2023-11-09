@@ -1,6 +1,7 @@
 import "./style.scss";
 import { iconData } from "./iconData";
 import { useState } from "react";
+import DarkMode from "../darkMode/darkMode";
 
 const Sidebar = () => {
 
@@ -51,10 +52,12 @@ const Sidebar = () => {
           <img classname="log-btn" src="/assets/log.svg" alt="" />
         </div> */}
       </div>
+<DarkMode/>
+        
     </>
+    
   );
 };
-
 export default Sidebar;
 
 export function Dropdown({ name, children, className }) {
