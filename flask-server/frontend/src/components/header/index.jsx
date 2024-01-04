@@ -7,6 +7,12 @@ import { Link } from "react-router-dom";
 
 export const Header = () => {
   const [username] = useState("Vincent");
+  const [isSearchVisible, setIsSearchVisible] = useState(false);
+  
+  const toggleSearchBar = () => {
+    setIsSearchVisible(!isSearchVisible);
+  };
+
   return (
     <div style={{width:'100%', padding:'0px 20px'}}>
       <div className="header-container">
@@ -17,7 +23,7 @@ export const Header = () => {
           </div>
           <div className="HeaderRight">
             <div className="header-icons">
-              <IoSearch />
+              <IoSearch className="search" onClick={toggleSearchBar}/>
               <FaRegBell />
               <AiOutlineCalendar />
               <span>
@@ -36,6 +42,14 @@ export const Header = () => {
           </div>
         </div>
       </div>
+      {isSearchVisible && (
+        <div className="search-bar">
+          <input type="text" placeholder="Search..." />
+          <button className="search-btn">Search</button>
+          {/* Add other search bar elements as needed */}
+        </div>
+      )}
+
       <div className="subHeader">
         <div className="leftSide">
           <h3 className="text">
@@ -43,10 +57,10 @@ export const Header = () => {
             </h3>
         </div>
         <div className="rightSide">
-          <h3>Filter</h3>
-          <h3>Sort</h3>
-          <img src="/assets/More.svg" alt="" />
-          <button>New template</button>
+          <h4>Filter</h4>
+          <h4>Sort</h4>
+          <img src="/assets/More.svg" alt="" className="more"/>
+          <button className="template-btn">New template</button>
         </div>
       </div>
     </div>
