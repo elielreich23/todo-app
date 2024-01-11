@@ -1,8 +1,18 @@
 import "./style.scss";
 import { iconData } from "./iconData";
 import { useState } from "react";
+import PopupForm from "../PopupForm";
 
 const Sidebar = () => {
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+  const openPopup = () => {
+    setIsPopupOpen(true);
+  };
+
+  const closePopup = () => {
+    setIsPopupOpen(false);
+  };
 
   return (
     <>
@@ -17,7 +27,7 @@ const Sidebar = () => {
         <div className="whitepane">
           <div className="whitepane-heading">
             <h1>Projects</h1>
-            <div className="plus">+</div>
+            <div className="plus" onClick={openPopup}>+</div>
           </div>
           <Dropdown name={"Team"} className={"drop"}></Dropdown>
           <Dropdown name={"Projects"} className={"drop"}>
@@ -51,6 +61,9 @@ const Sidebar = () => {
           <img classname="log-btn" src="/assets/log.svg" alt="" />
         </div> */}
       </div>
+      {isPopupOpen && (
+        <PopupForm onClose={closePopup} />
+      )}
     </>
   );
 };
