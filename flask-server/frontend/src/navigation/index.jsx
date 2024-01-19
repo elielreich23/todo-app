@@ -9,14 +9,17 @@ import Sidebar from "../components/sidebar";
 // import Todo from "../components/Todo-section";
 // import Progress from "../components/Progress";
 // import Template from "../pages/Template";
-// import Done from "../components/Done";
+//  import Done from "../components/Done"
+
 
 const Navigation = () => {
   return (
     <>
       <div className="Navigate" style={{display: 'flex' }}>
         <Sidebar />
+        
         <Header />
+        
       </div>
       
       {/* <Routes>

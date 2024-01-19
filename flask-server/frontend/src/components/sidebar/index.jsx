@@ -2,6 +2,7 @@ import "./style.scss";
 import { iconData } from "./iconData";
 import { useState } from "react";
 import PopupForm from "../PopupForm";
+import Todo from "../Todo-section";
 
 const Sidebar = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
@@ -64,6 +65,7 @@ const Sidebar = () => {
       {isPopupOpen && (
         <PopupForm onClose={closePopup} />
       )}
+      <Todo/>
     </>
   );
 };
