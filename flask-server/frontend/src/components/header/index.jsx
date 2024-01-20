@@ -18,7 +18,7 @@ export const Header = () => {
       <div className="header-container">
         <div className="header-content">
           <div className="text">
-            Welcome back, {username} <span> </span>
+            Welcome back, {username} <span> 👋</span>
             {/* create a function to collect user name upon signup */}
           </div>
           <div className="HeaderRight">
