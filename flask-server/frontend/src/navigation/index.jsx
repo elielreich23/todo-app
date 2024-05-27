@@ -1,7 +1,7 @@
 // import { Route, Routes } from "react-router-dom";
 import { Header } from "../components/header";
 import Sidebar from "../components/sidebar";
-import LoginPage from "../components/Login";
+
 
 
 
@@ -10,7 +10,7 @@ const Navigation = () => {
     <>
       <div className="Navigate" style={{display: 'flex' }}>
         <Sidebar />
-        <LoginPage/>
+        
         <Header />
         
       </div>
