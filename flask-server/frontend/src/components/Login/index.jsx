@@ -1,22 +1,23 @@
 import React from 'react'
-import './style.scss'
+import {Link} from 'react-router'
+import  './styles.scss'
 
-function index() {
+const Login = ()  => {
   return (
     <>
      <form method="post" action="/dashboard" >
           <span>Login</span>
-          <input className={styles.text} name="username" type="text" />
+          <input className="text" name="username" type="text" />
 
           <span>Senha</span>
-          <input type="password" className={styles.text} name="password" />
+          <input type="password" className="text" name="password" />
 
           <Link href="/email">
             <label htmlFor="checkbox-1-1">Esqueci a senha</label>
           </Link>
 
           <br />
-          <button className={styles.signin}>
+          <button className="signin">
             Entrar
           </button>
           <hr />
@@ -25,4 +26,4 @@ function index() {
   )
 }
 
-export default index
+export default Login
