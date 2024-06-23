@@ -2,7 +2,6 @@ import './App.scss';
 import "./components/FontAwesome";
 import { BrowserRouter } from 'react-router-dom';
 import Navigation from "./navigation";
-import Login from './components/Login';
 
 
 function App() {
@@ -13,7 +12,6 @@ function App() {
         <Navigation />
       </div>
       </BrowserRouter>
-      <Login/>
     </>
   );
 }
